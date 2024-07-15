@@ -4,4 +4,5 @@ from candidate.views.candidate import RegisterCandidateView
 
 urlpatterns = [
     path("register",RegisterCandidateView.as_view())
+    path("invite",RegisterCandidateView.as_view())
 ]

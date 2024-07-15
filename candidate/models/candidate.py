@@ -8,3 +8,7 @@ class CandidateInfo(TimeStampModel):
     email = models.CharField(max_length=100, db_index=True, unique=True)
 
     
+class CandidateInvitations(TimeStampModel):
+    candidate = models.ForeignKey(to=("candidate.CandidateInfo"), on_delete=models.RESTRICT)
+    invitation_link = models.CharField(max_length=200, db_index=True, unique=True)
+    

@@ -13,7 +13,7 @@ from scheduler.models.system_schedule import SystemSchedule
 from scheduler.services.recruiter.fetch_schedule import get_recruiter_schedule_for_a_day
 from scheduler.services.system.fetch_schedule import get_available_interviewer
 
-
+# First create functionality to generate link to shcedule an interview
 def schedule_an_interview(data:ScheduleInterviewRequest):
     candidate_id = data.candidate_id
     interview_date = data.date

@@ -30,7 +30,7 @@ def filter_schedules(new_schedule):
     # new_schedule_map = day_to_time_map_from_model_list(new_schedule)
     # existing_schedule_map = day_to_time_map_from_model_list(existing_schedule)
     new_slots = []
-    updated_slots = [] 
+    updated_slots = []
     deleted_slots = []
     for schedule in new_schedule:
         if not schedule.id or schedule.id ==0 :
